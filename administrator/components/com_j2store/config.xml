@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset name="COM_J2STORE_BASIC_OPTIONS" label="J2STORE_BASIC_OPTIONS">
+
+		<field name="j2store_enable_css" type="radio" default="1"
+			class="btn-group" label="j2store_conf_j2store_enable_css_label"
+			description="j2store_conf_j2store_enable_css_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+        <field name="load_jquery" type="radio" default="1"
+            class="btn-group" label="j2store_conf_load_jquery_label"
+            description="j2store_conf_load_jquery_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>
+        </field>
+        
+         <field name="load_bootstrap" type="radio" default="1"
+            class="btn-group" label="j2store_conf_load_bootstrap_label"
+            description="j2store_conf_load_bootstrap_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>
+        </field>
+        
+
+		<field name="show_quicktips" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_quicktips_label" description="j2store_conf_show_quicktips_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="isregister" type="radio" default="0" class="btn-group"
+			label="j2store_conf_isregister_label" description="j2store_conf_isregister_desc">
+			<option value="0">J2STORE_PUBLIC</option>
+			<option value="1">J2STORE_REGISTERED</option>
+		</field>
+		
+		<field name="date_format" type="text" size="40" default="Y-m-d H:i:s"
+			label="j2store_conf_date_format_label" description="j2store_conf_date_format_desc" />
+
+		<field name="attachmentfolderpath" type="text" default="" size="40"
+			label="j2store_conf_attachmentfolderpath_label" description="j2store_conf_attachmentfolderpath_desc" />		
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_CART_SETTINGS" label="J2STORE_CART_SETTINGS">
+
+
+		<field name="show_addtocart" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_addtocart_label" description="j2store_conf_show_addtocart_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="addtocart_placement" type="radio" default="default"
+			class="btn-group" label="j2store_conf_addtocart_placement_label"
+			description="j2store_conf_addtocart_placement_desc">
+			<option value="default">J2STORE_CONF_OPTION_ADDTOCART_DEFAULT</option>
+			<option value="tag">J2STORE_CONF_OPTION_ADDTOCART_TAG</option>
+			<option value="both">J2STORE_CONF_OPTION_ADDTOCART_BOTH</option>
+		</field>
+
+
+		<field name="show_thumb_cart" type="list" default="intro"
+			label="j2store_conf_show_thumb_cart_label" description="j2store_conf_show_thumb_cart_desc">
+			<option value="within_text">j2store_conf_image_within_article</option>
+			<option value="intro">j2store_conf_intro_Image</option>
+			<option value="fulltext">j2store_conf_full_article_image</option>
+			<option value="0">j2store_conf_never_show_thumbnail</option>
+		</field>
+
+		<field name="cartimage_size" type="radio" default="Small" class="btn-group"
+			label="j2store_conf_cartimage_size_label" description="j2store_conf_cartimage_size_desc">
+			<option value="Small">J2STORE_CONF_CARTIMAGE_SIZE_SMALL</option>
+			<option value="Medium">J2STORE_CONF_CARTIMAGE_SIZE_MEDIUM</option>
+			<option value="Large">J2STORE_CONF_CARTIMAGE_SIZE_LARGE</option>
+		</field>
+		
+		<field name="show_sku_field" type="radio" default="0" class="btn-group"
+            label="j2store_conf_show_sku_field_label" 
+            description="j2store_conf_show_sku_field_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>
+        </field>
+		
+
+		<field name="show_qty_field" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_qty_field_label" description="j2store_conf_show_qty_field_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="show_price_field" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_price_field_label" description="j2store_conf_show_price_field_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="price_display_options" type="radio" default="1"
+			class="btn-group" label="j2store_conf_price_display_options_label"
+			description="j2store_conf_price_display_options_desc">
+			<option value="1">J2STORE_CONFIG_PRICE_ONLY</option>
+			<option value="2">J2STORE_CONFIG_PRICE_PLUS_TAX</option>
+			<option value="3">J2STORE_CONFIG_PRICE_AND_TAX_SEPARATE</option>
+		</field>
+
+		<field name="config_tax_default" type="radio" default="billing"
+			class="btn-group" label="j2store_conf_config_tax_default_label"
+			description="j2store_conf_config_tax_default_desc">
+			<option value="billing">J2STORE_BILLING_ADDRESS</option>
+			<option value="shipping">J2STORE_SHIPPING_ADDRESS</option>
+		</field>
+
+
+		<field name="show_tax_total" type="radio" default="0" class="btn-group"
+			label="j2store_conf_show_tax_total_label" description="j2store_conf_show_tax_total_desc">
+			<option value="1">J2STORE_CONF_INCLUDING_TAX</option>
+			<option value="0">J2STORE_CONF_EXCLUDING_TAX</option>
+		</field>
+		
+		<field name="auto_calculate_tax" type="radio" default="1" class="btn-group"
+            label="j2store_conf_auto_calculate_tax_label" description="j2store_conf_auto_calculate_tax_desc">
+            <option value="1">J2STORE_YES</option>
+            <option value="0">J2STORE_NO</option>
+        </field>
+
+		<field name="show_shipping_address" type="radio" default="1"
+			class="btn-group" label="j2store_conf_show_shipping_address_label"
+			description="j2store_conf_show_shipping_address_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="show_login_form" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_login_form_label" description="j2store_conf_show_login_form_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="allow_registration" type="radio" default="1"
+			class="btn-group" label="j2store_conf_allow_registration_label"
+			description="j2store_conf_allow_registration_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="allow_guest_checkout" type="radio" default="0"
+			class="btn-group" label="j2store_conf_allow_guest_checkout_label"
+			description="j2store_conf_allow_guest_checkout_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="popup_style" type="radio" default="1" class="btn-group"
+			label="j2store_conf_popup_style_label" description="j2store_conf_popup_style_desc">
+			<option value="1">J2STORE_CONF_OPTION_SMALL</option>			
+			<option value="3">J2STORE_CONF_OPTION_REDIRECT</option>
+		</field>
+		
+		<field name="show_customer_note" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_customer_note_label" description="j2store_conf_show_customer_note_desc">
+			<option value="0">J2STORE_NO</option>			
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="show_tax_calculator" type="radio" default="1" class="btn-group"
+            label="j2store_conf_show_tax_calculator_label" description="j2store_conf_show_tax_calculator_desc">
+            <option value="0">J2STORE_NO</option>           
+            <option value="1">J2STORE_YES</option>
+        </field>
+			
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_DISCOUNT_SETTINGS" label="J2STORE_DISCOUNT_SETTINGS">
+	
+		<field name="global_minordervalue" type="text" size="20"
+			default="" label="j2store_conf_global_minordervalue_label"
+			description="j2store_conf_global_minordervalue_desc" />
+
+	</fieldset>	
+	
+	<fieldset name="COM_J2STORE_ORDER_SETTINGS" label="J2STORE_ORDER_FIELDS">
+    
+        <field name="show_incomplete_orders" type="radio" default="0" class="btn-group"
+            label="j2store_conf_show_incomplete_orders_label" 
+            description="j2store_conf_show_incomplete_orders_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>            
+        </field>
+        
+         <field name="show_unique_orderid" type="radio" default="0" class="btn-group"
+            label="j2store_conf_show_unique_order_id_label" 
+            description="j2store_conf_show_unique_order_id_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>            
+        </field>
+        
+        <field name="show_postpayment_orderlink" type="radio" default="1" class="btn-group"
+            label="j2store_conf_show_postpayment_orderlink_label" 
+            description="j2store_conf_show_show_postpayment_orderlink_desc">
+            <option value="0">J2STORE_NO</option>
+            <option value="1">J2STORE_YES</option>            
+        </field>
+        
+     </fieldset> 
+		
+	<fieldset name="COM_J2STORE_SHOP_SETTINGS" label="J2STORE_SHOP_SETTINGS">
+
+		<field name="emails_defaultemail" type="text" size="40"
+			default="yourfrom@email.com" label="j2store_conf_emails_defaultemail_label"
+			description="j2store_conf_emails_defaultemail_desc" />
+
+		<field name="emails_defaultname" type="text" size="40"
+			default="Your From Name" label="j2store_conf_emails_defaultname_label"
+			description="j2store_conf_emails_defaultname_desc" />
+
+		<field name="admin_email" type="text" size="40" default="youradmin@email.com"
+			label="j2store_conf_admin_email_label" description="j2store_conf_admin_email_desc" />
+
+
+		<field name="shopname" type="text" size="40" default="My Shop"
+			label="j2store_conf_shopname_label" description="j2store_conf_shopname_desc" />
+
+		<field name="signature" type="textarea" rows="5" cols="40"
+			default="Administrator, My Shop" label="j2store_conf_signature_label"
+			description="j2store_conf_signature_desc" />
+
+	</fieldset>
+	
+	<fieldset name="updates"
+		label="COM_J2STORE_CONFIG_UPDATES_LABEL"
+		description="COM_J2STORE_CONFIG_UPDATES_DESC">
+	<!--	
+	<field name="downloadid" type="text" default="" size="30"
+			label="COM_J2STORE_CONFIG_UPDATE_DOWNLOADID_LABEL"
+			description ="COM_J2STORE_CONFIG_UPDATE_DOWNLOADID_DESC" />
+	-->		
+		<field name="minstability" type="list" default="stable" label="COM_J2STORE_CONFIG_UPDATES_MINSTABILITY_LABEL" description="COM_J2STORE_CONFIG_UPDATES_MINSTABILITY_DESC">
+			<option value="alpha">COM_J2STORE_CONFIG_UPDATES_STABILITY_ALPHA</option>
+			<option value="beta">COM_J2STORE_CONFIG_UPDATES_STABILITY_BETA</option>
+			<option value="rc">COM_J2STORE_CONFIG_UPDATES_STABILITY_RC</option>
+			<option value="stable">COM_J2STORE_CONFIG_UPDATES_STABILITY_STABLE</option>
+		</field>
+		<field name="liveupdate" type="hidden" default="" label="" description="" />
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_MISC_SETTINGS" label="J2STORE_MISC_SETTINGS">
+
+		<field name="show_terms" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_terms_label" description="j2store_conf_show_terms_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="terms_display_type" type="radio" default="link"
+			class="btn-group" label="j2store_conf_terms_display_type_label"
+			description="j2store_conf_terms_display_type_desc">
+			<option value="link">J2STORE_CONF_TERMS_DISPLAY_OPTION_LINK</option>
+			<option value="checkbox">J2STORE_CONF_TERMS_DISPLAY_OPTION_CHECKBOX</option>
+		</field>
+
+		<field name="show_title" type="radio" default="1" class="btn-group"
+			label="j2store_conf_show_title_label" description="j2store_conf_show_title_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+		<field name="termsid" type="text" size="20" default=""
+			label="j2store_conf_termsid_label" description="j2store_conf_termsid_desc" />
+	</fieldset>
+	
+	
+	<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL"
+	>
+
+		<field name="rules" type="rules"
+			component="com_j2store"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+</config>

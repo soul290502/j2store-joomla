@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="store_id" type="hidden" default="0"
+			label="J2STORE_STORE_ID_LABEL" readonly="true" size="10" />
+
+		<field name="store_name" type="text" description="J2STORE_STORE_NAME_DESC"
+			label="J2STORE_STORE_NAME_LABEL" required="true" size="30" />
+
+		<field name="store_desc" description="J2STORE_STORE_DESC_DESC"
+			label="J2STORE_STORE_DESC_LABEL" type="editor" width="500" filter="safehtml" />
+			
+		<field name="store_address_1" type="text" description="J2STORE_ADDRESS_LINE1"
+			label="J2STORE_ADDRESS_LINE1" required="true" size="30" />
+			
+		<field name="store_address_2" type="text" description="J2STORE_ADDRESS_LINE2"
+			label="J2STORE_ADDRESS_LINE2" size="30" />
+			
+		<field name="store_city" type="text" description="J2STORE_ADDRESS_CITY"
+			label="J2STORE_ADDRESS_CITY" required="true" size="30" />
+			
+		<field name="store_zip" type="text" description="J2STORE_ADDRESS_ZIP"
+			label="J2STORE_ADDRESS_ZIP" required="true" size="30" />
+		
+		<field name="country_id" type="CountryList" description="J2STORE_STORE_COUNTRY_NAME_DESC"
+			label="J2STORE_STORE_COUNTRY_NAME_LABEL" required="true" size="30" />
+		
+		<field name="zone_id" type="ZoneList" description="J2STORE_STORE_ZONE_NAME_DESC"
+			label="J2STORE_STORE_ZONE_NAME_LABEL" required="true" size="30" />
+			
+		<field name="config_currency" type="CurrencyList" description="J2STORE_STORE_DEFAULT_CURRENCY_DESC"
+            label="J2STORE_STORE_DEFAULT_CURRENCY_LABEL" required="true" size="30" />
+            
+        <field name="config_currency_auto" type="radio" description="J2STORE_STORE_CURRENCY_AUTO_UPDATE_DESC"
+			label="J2STORE_STORE_CURRENCY_AUTO_UPDATE_LABEL" required="true" default="1">
+			<option value="1"> JYES</option>
+			<option value="0"> JNO</option>
+		</field>            
+			
+		<field name="config_length_class_id" type="LengthList" description="J2STORE_STORE_LENGTH_NAME_DESC"
+            label="J2STORE_STORE_LENGTH_NAME_LABEL" size="30" />
+            
+        <field name="config_weight_class_id" type="WeightList" description="J2STORE_STORE_WEIGHT_NAME_DESC"
+            label="J2STORE_STORE_WEIGHT_NAME_LABEL" size="30" />
+            
+         <field name="config_shipping_default" type="shippingtype" description="J2STORE_STORE_SHIPPING_DEFAULT_TYPE_DESC"
+            label="J2STORE_STORE_SHIPPING_DEFAULT_TYPE_LABEL" size="30" />
+            
+            <field name="config_default_category" type="category" extension="com_content"
+                    multiple="false" size="1"
+                    label="J2STORE_STORE_DEFAULT_CATEGORY_LABEL"
+                    description="J2STORE_STORE_DEFAULT_CATEGORY_DESC"
+                >
+                    <option value="">J2STORE_SELECT_OPTION</option>
+                </field>
+            
+         <field name="config_continue_shopping_url" type="text" description="J2STORE_STORE_CONFIG_CONTINUE_SHOPPING_URL_DESC"
+            label="J2STORE_STORE_CONFIG_CONTINUE_SHOPPING_URL" size="80" />          
+            
+     		<field name="state" type="list" description="J2STORE_STATUS_DESC"
+			label="J2STORE_STATUS_LABEL" required="true" size="1" default="1">
+			<option value="1"> JPUBLISHED</option>
+			<option value="0"> JUNPUBLISHED</option>
+		</field>
+       <field name="store_register_layout" description="J2STORE_STORE_REGISTER_LAYOUT_DESC"
+            label="J2STORE_STORE_REGISTER_LAYOUT_LABEL" type="editor" width="500" filter="safehtml" required="true"  />            
+    
+    <field name="store_billing_layout" description="J2STORE_STORE_BILLING_LAYOUT_DESC"
+            label="J2STORE_STORE_BILLING_LAYOUT_LABEL" type="editor" width="500" filter="safehtml" required="true"  />
+            
+    <field name="store_shipping_layout" description="J2STORE_STORE_SHIPPING_LAYOUT_DESC"
+            label="J2STORE_STORE_SHIPPING_LAYOUT_LABEL" type="editor" width="500" filter="safehtml" required="true"  />         
+            
+    <field name="store_guest_layout" description="J2STORE_STORE_GUEST_LAYOUT_DESC"
+            label="J2STORE_STORE_GUEST_LAYOUT_LABEL" type="editor" width="500" filter="safehtml" required="true"  />
+            
+    <field name="store_guest_shipping_layout" description="J2STORE_STORE_GUEST_SHIPPING_LAYOUT_DESC"
+            label="J2STORE_STORE_GUEST_SHIPPING_LAYOUT_LABEL" type="editor" width="500" filter="safehtml" required="true"  />       
+            
+     <field name="store_payment_layout" description="J2STORE_STORE_PAYMENT_LAYOUT_DESC"
+            label="J2STORE_STORE_PAYMENT_LAYOUT_LABEL" type="editor" width="500" filter="safehtml"  />
+
+<field name="store_invoice_prefix" type="text" default="" description="J2STORE_STORE_INVOICE_PREFIX_DESC"
+           label="J2STORE_STORE_INVOICE_PREFIX_LABEL" size="30" />       
+	</fieldset>
+
+</form>

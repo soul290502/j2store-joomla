@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	method="upgrade"
+	position="j2store-module-position-1"
+	client="administrator">
+	<name>J2 Store QuickTips</name>
+	<creationDate>June 2014</creationDate>
+	<author>Gokila PriyaBose</author>
+	<copyright>Copyright (c) 2014 - 2019 Weblogicx India Private Ltd. All rights reserved.</copyright>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<version>1.0</version>
+	 <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+	 <![CDATA[<p>J2 Store QuickTips
+	 <p> Please contact to us for more info <a href="mailto:support@j2store.org">support@j2store.org</a></p>	  
+    ]]>	
+	
+	</description>
+<files>
+	<filename module="mod_j2store_quicktips">mod_j2store_quicktips.php</filename>
+	<filename>index.html</filename>    
+    <filename>mod_j2store_quicktips.xml</filename>    
+	<folder>tmpl</folder>
+</files>
+
+<config>
+
+</config>
+</extension>

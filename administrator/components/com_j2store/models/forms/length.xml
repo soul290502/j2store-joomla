@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="length_class_id" type="hidden" default="0"
+			label="J2STORE_LENGTH_CLASS_ID_LABEL" readonly="true" size="10" />
+
+		<field name="length_title" type="text" description="J2STORE_LENGTH_TITLE_DESC"
+			label="J2STORE_LENGTH_TITLE_LABEL" required="true" size="30" />
+
+		<field name="length_unit" type="text" description="J2STORE_LENGTH_UNIT_DESC"
+			label="J2STORE_LENGTH_UNIT_LABEL" required="true"  size="10" />
+			
+			<field name="length_value" type="text" description="J2STORE_LENGTH_VALUE_DESC"
+			label="J2STORE_LENGTH_VALUE_LABEL" required="true"  size="10" />
+
+		<field name="state" type="list" description="J2STORE_STATUS_DESC"
+			label="J2STORE_STATUS_LABEL" required="true" size="1" default="1">
+			<option value="1"> JPUBLISHED</option>
+			<option value="0"> JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+
+</form>

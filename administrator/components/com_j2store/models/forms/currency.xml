@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="currency_id" type="hidden" default="0"
+			label="J2STORE_CURRENCY_CLASS_ID_LABEL" readonly="true" size="10" />
+
+		<field name="currency_title" type="text" description="J2STORE_CURRENCY_TITLE_DESC"
+			label="J2STORE_CURRENCY_TITLE_LABEL" required="true" size="30" />
+
+		<field name="currency_code" type="text" description="J2STORE_CURRENCY_CODE_DESC"
+			label="J2STORE_CURRENCY_CODE_LABEL" default="" required="true"  size="10" />
+			
+		<field name="currency_symbol" type="text" description="J2STORE_CURRENCY_SYMBOL_DESC" default=""
+            label="J2STORE_CURRENCY_SYMBOL_LABEL" required="true"  size="10" />
+			
+		<field name="currency_position" type="list" description="J2STORE_CURRENCY_POSITION_DESC"
+			label="J2STORE_CURRENCY_POSITION_LABEL" required="true">
+			<option value="pre">J2STORE_CURRENCY_FRONT</option>
+			<option value="post">J2STORE_CURRENCY_END</option>
+		</field>
+				
+		  <field name="currency_num_decimals" type="text" default="2" description="J2STORE_CURRENCY_NUM_DECIMALS_DESC"
+            label="J2STORE_CURRENCY_NUM_DECIMALS_LABEL" required="true"  size="10" />	
+			
+		<field name="currency_decimal" type="text" default="." description="J2STORE_CURRENCY_DECIMAL_SEPARATOR_DESC"
+			label="J2STORE_CURRENCY_DECIMAL_SEPARATOR_LABEL" required="true"  size="10" />
+			
+		<field name="currency_thousands" type="text" description="J2STORE_CURRENCY_THOUSANDS_DESC"
+			label="J2STORE_CURRENCY_THOUSANDS_LABEL" size="10" />
+			
+		<field name="currency_value" type="text" description="J2STORE_CURRENCY_VALUE_DESC"
+			label="J2STORE_CURRENCY_VALUE_LABEL" required="true"  size="10" />
+			
+		<field name="currency_modified" type="calendar" class="readonly"
+			label="J2STORE_CURRENCY_MODIFIED_LABEL" description="J2STORE_CURRENCY_MODIFIED_DESC"
+			size="22" readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+
+		<field name="state" type="list" description="J2STORE_STATUS_DESC"
+			label="J2STORE_STATUS_LABEL" required="true" size="1" default="1">
+			<option value="1"> JPUBLISHED</option>
+			<option value="0"> JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+
+</form>
