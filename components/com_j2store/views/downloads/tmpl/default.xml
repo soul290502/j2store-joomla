@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Downloads">
+		<message>
+			<![CDATA[Displays a list of downloadable attachments.]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>Downloads List Layout</name>
+		<description>Displays a list of Downloadable attachments Desc</description>
+		<params>
+
+		</params>
+	</state>
+
+</metadata>

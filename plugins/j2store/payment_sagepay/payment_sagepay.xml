@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="j2store" method="upgrade">
+	<name>plg_j2store_payment_sagepay</name>
+	<version>2.1</version>
+	<creationDate>Dec 2013</creationDate>
+	<author>j2store.org</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<copyright>2013-2018 Weblogicx India Private Limited </copyright>
+	<license>GNU General Public License v2 or later</license>
+	<description>J2STORE_SAGEPAY_PLUGINDESC</description>
+	<files>
+		<filename plugin="payment_sagepay">payment_sagepay.php</filename>
+		<folder>payment_sagepay</folder>  	
+	</files>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		<field name="display_name" type="text" size="30" default="" label="j2store_plugin_display_name" description="j2store_plugin_display_name_desc"/>
+     	<field name="merchant_email" type="text" size="50" default="" label="j2store_sagepay_vendor_name" description="j2store_sagepay_vendor_name_desc"/>	
+		<field name="enc_password" type="text" size="50" default="" label="j2store_sagepay_encryption_password" description="j2store_sagepay_encryption_password_desc"/>
+		<field name="secure_post" type="radio" default="0" label="j2store_sagepay_secure_post" description="j2store_sagepay_secure_post_desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field type="spacer" />
+        <field name="sandbox" type="radio" default="0" label="j2store_sagepay_test_server" description="j2store_sagepay_test_server_desc">
+          <option value="0">J2STORE_NO</option>
+          <option value="1">J2STORE_YES</option>
+        </field>
+       <field type="spacer" />
+		<field name="articleid" type="text" size="10" default="" label="J2STORE_PAYMENT_THANKS_MSG" description="J2STORE_PAYMENT_THANKS_MSG_DESC"/>
+		</fieldset>
+	</fields>
+</config>				
+</extension>

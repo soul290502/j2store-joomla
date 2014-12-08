@@ -1,0 +1,308 @@
+table#cart {
+	width: 100%;
+}
+table#cart a div.j2storeCartRemove {
+	background: url("../images/remove-roll.png") no-repeat scroll 0 0
+		transparent;
+	height: 18px;
+	width: 18px;
+}
+
+table#cart a:hover div.j2storeCartRemove {
+	background: url("../images/remove-over.png") no-repeat scroll 0 0
+		transparent;
+}
+
+/*  set the width and height of cart images here*/
+table#cart tr td #itemImgSmall {
+	width: 80px;
+}
+
+table#cart tr td #itemImgMedium {
+	width: 100px;
+}
+
+table#cart tr td #itemImgLarge {
+	width: 130px;
+}
+
+table#cart .j2store-cart-item-image img {
+	float: left;
+	margin-right: 10px;
+}
+
+table#cart .j2store-cart-footer td{
+	border-bottom: none;
+	border-top: none;
+}
+table#cart .cart_subtotal td {
+	border-top: 1px solid #DDDDDD;
+}
+
+input.productqty,
+.product_quantity_input input
+{
+	width: 20px;
+}
+
+.pao {
+	padding: 5px;
+}
+
+
+.j2store strike {
+	color: #ff0000;
+}
+
+.j2store .product_price,
+.j2store .product_special_price
+ {
+	display: block;
+ }
+ 
+ .j2store .currency_symbol {
+ margin-right: 2px;
+ }
+
+.j2store .checkout-heading {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DBDEE1;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+.j2store .checkout-heading a {
+    float: right;
+    font-weight: normal;
+    margin-top: 1px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.j2store .checkout-content {
+    display: none;
+    overflow: auto;
+    padding: 0 0 15px;
+}
+
+.j2store .checkout-content .buttons {
+    clear: both;
+}
+
+.j2store.checkout tr, .j2store.checkout td {
+	border: none;
+	padding-right: 10px;
+}
+
+.j2store.checkout label {	
+	margin: 0px;
+}
+
+.j2store #billing-existing select[size],
+.j2store #shipping-existing select[size]
+ {
+	height: auto; 
+}
+.j2store .options .required {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.j2error,
+div.j2error em.error,
+div.j2storeerror em.error,
+.payment_info input.error,
+.j2store label.error
+
+ {
+	color: #ff0000;
+	font-style: italic;
+}
+
+div.j2error em.success,
+div.j2storeerror em.success,
+.j2store label.success
+{
+	color: #17B500;
+	font-style: italic;
+}
+
+.j2store input.error { border: 1px solid red; }
+.j2store input.valid { border: 1px solid #17B500;	}
+
+.j2storeCartForm1 {
+	position: relative;
+}
+.j2store-notification {
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    margin-left: 0;
+    margin-top: -30px;
+    padding: 1em;
+    position: relative;
+    width: 200px;
+    z-index: 1000;   
+}
+.j2store-notification .j2success { float: left; }
+
+.j2store-notification .cart_dialogue_close {
+ background: none repeat scroll 0 0 #FF0000;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    width: 18px;
+}
+
+.j2store-product-info label {
+display: inline;
+}
+
+.product_quantity_input input {
+width: 20px;
+}
+
+/*bootstrap modal */
+
+.modal-open .dropdown-menu {
+    z-index: 2050;
+}
+.modal-open .dropdown.open {
+}
+.modal-open .popover {
+    z-index: 2060;
+}
+.modal-open .tooltip {
+    z-index: 2080;
+}
+
+.modal-backdrop {
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+.modal-backdrop.fade {
+    opacity: 0;
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.8;
+}
+.j2store-modal .modal {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    left: 50%;
+    margin: -250px 0 0 -280px;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    width: 560px;
+    z-index: 1050;
+}
+.j2store-modal.fade {
+    top: -25%;
+    transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
+}
+.j2store-modal.in {
+    top: 50%;
+}
+.j2store-modal .modal-header {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 9px 15px;
+}
+.j2store-modal .modal-header .close {
+    margin-top: 2px;
+}
+.j2store-modal .modal-header h3 {
+    line-height: 30px;
+    margin: 0;
+}
+.j2store-modal .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    text-align: left;
+}
+.j2store-modal .modal-form {
+    margin-bottom: 0;
+}
+.j2store-modal .modal-footer {
+    background-color: #F5F5F5;
+    border-radius: 0 0 6px 6px;
+    border-top: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    margin-bottom: 0;
+    padding: 14px 15px 15px;
+    text-align: right;
+}
+
+.j2store-modal .modal-footer:before, .j2store-modal .modal-footer:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+
+.j2store-modal .modal-footer:after {
+    clear: both;
+}
+.j2store-modal .modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.j2store-modal .modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+/* currency module css */
+
+#j2store_currency a {
+	border: 1px solid #ccc;
+	display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    padding: 2px 4px;
+    text-decoration: none;
+    cursor: pointer;    
+    }
+    
+.j2store_field_required {
+    float: left;
+    color: #ff0000;
+    margin-right: 2px;
+}
+
+#j2store-cart-shipping input[type="radio"] {
+	float: left;
+	margin-right: 5px;
+}
+
+.j2store .cart-total td {
+	text-align: right;
+}
+
+#j2store-checkout-content #onCheckoutShipping_wrapper > label {
+display: inline;
+}
+
+#j2store-checkout-content .shipping-make-same > label {
+display:inline;
+}
+#j2store-checkout-content #checkbox_tos > label {
+display:inline;
+}

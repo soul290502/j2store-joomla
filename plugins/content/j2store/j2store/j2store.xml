@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<form>
+	<fields name="attribs" addfieldpath="/plugins/content/j2store/j2store/fields">
+		<fieldset name="j2store"
+			label="PLG_J2STORE_SLIDER_LABEL"				
+		>
+			<field
+				name="product_id"
+				type="productid"
+				id="product_id"
+				description="PLG_J2STORE_PRODUCT_ID_DESC"			
+				label="PLG_J2STORE_PRODUCT_ID_LABEL"
+				message="PLG_J2STORE_PRODUCT_ID_MESSAGE"
+				size="10"
+			/>
+		
+			<field
+				name="product_enabled"
+				type="radio"
+				id="j2store_enable_cart"
+				class="btn-group"
+				default="0"
+				description="PLG_J2STORE_ENABLE_CART_DESC"
+				label="PLG_J2STORE_ENABLE_CART_LABEL"
+				message="PLG_J2STORE_ENABLE_CART_MESSAGE">
+				<option value="1">J2STORE_YES</option>
+				<option value="0">J2STORE_NO</option>
+			</field>
+			
+			<field
+				name="item_sku"
+				type="text"
+				id="item_sku"
+				description="PLG_J2STORE_ITEM_SKU_DESC"
+				label="PLG_J2STORE_ITEM_SKU_LABEL"
+				message="PLG_J2STORE_ITEM_SKU_MESSAGE"
+				size="30"
+			/>
+ 		
+			<field
+				name="item_price"
+				type="text"
+				id="item_price"
+				description="PLG_J2STORE_ITEM_PRICE_DESC"
+				label="PLG_J2STORE_ITEM_PRICE_LABEL"
+				message="PLG_J2STORE_ITEM_PRICE_MESSAGE"
+				size="30"
+			/>
+			
+				
+			<field
+				name="special_price"
+				type="text"
+				id="special_price"
+				description="PLG_J2STORE_SPECIAL_PRICE_DESC"	
+				label="PLG_J2STORE_SPECIAL_PRICE_LABEL"
+				message="PLG_J2STORE_SPECIAL_PRICE_DESC"
+				size="30"
+			/>
+			
+			<field
+				name="item_tax"
+				type="taxselect"
+				id="item_tax"
+				description="PLG_J2STORE_ITEM_TAX_DESC"			
+				label="PLG_J2STORE_ITEM_TAX_LABEL"
+				message="PLG_J2STORE_ITEM_TAX_MESSAGE"
+				size="30"
+			/>
+		
+
+			<field
+				name="item_shipping"
+				type="radio"
+				class="btn-group"
+				id="item_shipping"
+				default="0"
+				description="PLG_J2STORE_ITEM_ENABLE_SHIPPING_DESC"
+				label="PLG_J2STORE_ITEM_ENABLE_SHIPPING_LABEL"
+				message="PLG_J2STORE_ITEM_ENABLE_SHIPPING_MESSAGE"	 >
+				<option value="1">J2STORE_YES</option>
+				<option value="0">J2STORE_NO</option>
+			</field>
+			
+			<field
+                name="item_metrics"
+                type="metrics"
+                id="item_metrics"
+                description="PLG_J2STORE_ITEM_METRICS_DESC"  
+                label="PLG_J2STORE_ITEM_METRICS_LABEL"
+                message="PLG_J2STORE_ITEM_METRICS_MESSAGE"
+            />
+			
+			
+			
+			<field
+				name="item_options"
+				type="optionselect"
+				id="item_options"
+				description="PLG_J2STORE_ITEM_OPTION_DESC"	
+				label="PLG_J2STORE_ITEM_OPTION_LABEL"
+				message="PLG_J2STORE_ITEM_OPTION_MESSAGE"
+			/>
+
+			<field
+				name="item_attachment"
+				type="itemfiles"
+				id="item_attachment"
+				description="PLG_J2STORE_ITEM_ATTACHMENT_DESC"
+				label="PLG_J2STORE_ITEM_ATTACHMENT_LABEL"
+				message="PLG_J2STORE_ITEM_ATTACHMENT_MESSAGE"
+				size="30"
+			/>
+			
+			<field
+                name="item_j2plugins"
+                type="j2plugins"
+                id="item_j2plugins"
+            />
+			
+				<field
+				name="item_cart_text"
+				type="text"
+				id="item_cart_text"
+				description="PLG_J2STORE_ITEM_CARTEXT_DESC"
+				label="PLG_J2STORE_ITEM_CARTEXT_LABEL"
+				message="PLG_J2STORE_ITEM_CARTEXT_MESSAGE"
+				size="30"
+			/>
+			
+		</fieldset>
+	</fields>
+</form>

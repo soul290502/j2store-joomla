@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="J2STORE_MENU_CHECKOUT_ONEPAGE">
+		<message>
+			<![CDATA[J2STORE_MENU_CHECKOUT_ONEPAGE_MESSAGE]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>J2STORE_MENU_CHECKOUT_ONEPAGE_NAME</name>
+		<description>J2STORE_MENU_CHECKOUT_ONEPAGE_DESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

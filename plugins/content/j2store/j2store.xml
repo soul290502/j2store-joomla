@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="content">
+	<name>J2Store content</name>
+	<author>Sasi varna kumar</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (c) 2010 - 2015 Weblogicx India Private Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_J2STORE_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="j2store">j2store.php</filename>
+		<filename>index.html</filename>
+		<folder>j2store</folder>
+	</files>	
+</extension>
