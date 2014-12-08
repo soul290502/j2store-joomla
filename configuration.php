@@ -13,8 +13,8 @@ class JConfig {
 	public $captcha = '0';
 	public $cookie_domain = '';
 	public $cookie_path = '';
-	public $db = 'j2quick';
-	public $dbprefix = 'j2q_';
+	public $db = 'gogoshop';
+	public $dbprefix = 'gogo_';
 	public $dbtype = 'mysqli';
 	public $debug = '0';
 	public $debug_lang = '0';
@@ -33,7 +33,7 @@ class JConfig {
 	public $ftp_user = '';
 	public $gzip = '0';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
-	public $host = 'localhost';
+	public $host = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/';
 	public $lifetime = '150';
 	public $list_limit = '20';
 	public $live_site = '';
@@ -42,14 +42,14 @@ class JConfig {
 	public $mailfrom = 'quickstart@j2store.org';
 	public $memcache_compress = '1';
 	public $memcache_persist = '1';
-	public $memcache_server_host = 'localhost';
+	public $memcache_server_host = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/';
 	public $memcache_server_port = '11211';
 	public $offline = '0';
 	public $offline_image = '';
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
-	public $password = 'wish609';
+	public $password = '5FkEcfhT-ZNz';
 	public $robots = '';
 	public $secret = 'yBsbTVrJvrhreHBD';
 	public $sef = '1';
@@ -60,12 +60,12 @@ class JConfig {
 	public $sitename = 'J2Store Quick start';
 	public $sitename_pagetitles = '0';
 	public $smtpauth = '0';
-	public $smtphost = 'localhost';
+	public $smtphost = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/';
 	public $smtppass = '';
 	public $smtpport = '25';
 	public $smtpsecure = 'none';
 	public $smtpuser = '';
 	public $tmp_path = '/home/weblogicx/www/j2quick/tmp';
 	public $unicodeslugs = '0';
-	public $user = 'root';
+	public $user = 'adminDcpGFZT';
 }
